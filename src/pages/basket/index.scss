@@ -1,0 +1,35 @@
+@import "../../variables";
+
+.Basket {
+  margin-top: 176px;
+  h2 {
+    font-family: PFDinTextCompPro-Medium, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 39px;
+    margin: 0;
+  }
+  .emptyBasket {
+    font-family: PFDinTextCompPro-Medium, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+  }
+  .Checkout {
+    border-radius: 20px;
+    border: none;
+    background: #FF5B37;
+    padding: 9px 34px;
+    color: white;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    margin: 15px 0;
+  }
+  .disabled {
+    background: #c7c4c4;
+    opacity: 0.7;
+    cursor: initial;
+  }
+}

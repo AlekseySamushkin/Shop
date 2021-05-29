@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.authDialog {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: get-vw(410);
+  padding: get-vw(33) get-vw(26) get-vw(40) get-vw(26);
+  h3 {
+    font-family: PFDinTextCompPro-Medium, serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2E2F31;
+    margin: 0;
+    font-size: get-vw(24);
+  }
+  &__btn {
+    padding: get-vw(31) get-vw(5) get-vw(0) get-vw(5);
+    button {
+      width: 100%;
+    }
+  }
+  .form {
+    margin-top: get-vw(45);
+  }
+}

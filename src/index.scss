@@ -1,0 +1,84 @@
+@import "./variables.scss";
+
+body {
+  //margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background: #fff;
+  width: 100%;
+  max-width: 1332px;
+  //padding: 0 52px;
+  margin: 0 auto;
+}
+#root {
+  margin: 0 52px;
+}
+* {
+  outline: none;
+}
+
+p {
+  font-family: Roboto, serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.bigRedButton {
+  background: $primary-red;
+  border-radius: 49px;
+  color: $white;
+  border: none;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.transparentButton {
+  border: 1px solid #55545A;
+  box-sizing: border-box;
+  border-radius: 85px;
+  background: inherit;
+  padding: 8px 15px;
+  color: #ffffff80;
+  cursor: pointer;
+}
+
+.MuiDialogActions-root {
+  background: $background;
+  button {
+    color: $white;
+  }
+}
+.MuiPickersBasePicker-container {
+  background: $background;
+  color: $white;
+  .MuiPickersDay-daySelected {
+    background-color: $primary-red;
+    &:hover {
+      background-color: $primary-red;
+    }
+  }
+  .MuiToolbar-root {
+    background: $background;
+  }
+  .MuiPickersDay-dayDisabled {
+    opacity: 0.5;
+  }
+  .MuiPickersDay-day {
+    color: $white;
+  }
+  .MuiPickersCalendarHeader-dayLabel {
+    color: $white;
+  }
+  .MuiPickersCalendarHeader-iconButton {
+    background: $background;
+    color: $white;
+  }
+}
+
+@media (max-width: 500px) {
+  #root {
+    margin: 0 4%;
+  }
+}

@@ -1,0 +1,63 @@
+.ProductItem {
+  background: #a3a3a3c9;
+  border-radius: 10px;
+  padding: 3%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  img {
+    max-width: 86%;
+    max-height: 218px;
+  }
+  &__info {
+    width: 87%;
+    .name {
+      font-family: Roboto, serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .price {
+      font-family: Roboto, serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .description {
+      font-family: Roboto, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      line-clamp: 6;
+      margin-bottom: 70px;
+      cursor: pointer;
+    }
+    .addToBasketContainer {
+      position: absolute;
+      bottom: 10px;
+      left: 9px;
+      right: 9px;
+        button {
+          border: none;
+          padding: 10px 20px;
+          border-radius: 20px;
+          font-family: Roboto, serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          color: #000;
+          cursor: pointer;
+        }
+    }
+  }
+}

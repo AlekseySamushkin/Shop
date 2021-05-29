@@ -1,0 +1,51 @@
+@import "../../variables";
+
+.mainPage {
+  display: flex;
+  margin-top: 76px;
+  .productLIst {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 100px;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+    .titleCont {
+      font-family: PFDinTextCompPro-Medium, serif;
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .mainPage {
+    .productLIst {
+      &__content {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 882px) {
+  .mainPage {
+    .productLIst {
+      &__content {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .mainPage {
+    display: block;
+    .productLIst {
+      &__content {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+      }
+    }
+  }
+}

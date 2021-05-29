@@ -1,0 +1,80 @@
+
+
+.BasketItem {
+  background: #a3a3a3c9;
+  border-radius: 20px;
+  padding: 4%;
+  display: flex;
+  margin-bottom: 20px;
+  .img {
+    width: 20%;
+    cursor: pointer;
+  }
+  .infoContainer {
+    width: 50%;
+    .name {
+      font-family: PFDinTextCompPro-Medium, serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 29px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      cursor: pointer;
+    }
+    .description {
+      font-family: Roboto, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      line-clamp: 6;
+      cursor: pointer;
+    }
+  }
+  .buttonContainer {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: column;
+    button {
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-family: Roboto, serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media (max-width: 828px) {
+  .BasketItem {
+    flex-direction: column;
+    align-items: center;
+    .img {
+      width: 55%;
+    }
+    .infoContainer {
+      width: 100%;
+    }
+    .buttonContainer {
+      margin-top: 45px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "frontend-on-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/core": "4.11.0",
+    "@material-ui/lab": "4.0.0-alpha.52",
+    "@material-ui/pickers": "^3.2.10",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "connected-react-router": "^6.6.1",
+    "date-fns": "^2.13.0",
+    "file-saver": "^2.0.2",
+    "final-form": "^4.11.0",
+    "final-form-arrays": "^3.0.2",
+    "history": "^4.10.1",
+    "http-proxy-middleware": "^1.0.4",
+    "is_js": "^0.9.0",
+    "kaktana-react-lightweight-charts": "^1.1.5",
+    "lightweight-charts": "^3.3.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "qs": "^6.9.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-easy-swipe": "0.0.21",
+    "react-final-form": "^6.3.5",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-router-prop-types": "^1.0.4",
+    "react-scripts": "^3.4.3",
+    "react-slick": "^0.26.1",
+    "react-tradingview-widget": "^1.3.2",
+    "react-yandex-maps": "^4.2.0",
+    "recharts": "^1.8.5",
+    "redux": "4.0.5",
+    "redux-saga": "^1.1.3"
+  },
+  "devDependencies": {
+    "@material-ui/icons": "^4.9.1",
+    "ramda": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
