@@ -33,7 +33,7 @@ const Basket = ({ getCart, clearCart, basket}) => {
                 basket && basket.length === 0 && <div className="emptyBasket">Корзина пуста</div>
             }
             {checkOut &&
-                <CheckoutModal onClose={()=>setCheckOut(false)} />
+                <CheckoutModal phoneList={basket.map(el=>el.id)} onClose={()=>setCheckOut(false)} />
             }
             <button
                 className={cn("Checkout",{"disabled": !basket || basket?.length === 0})}

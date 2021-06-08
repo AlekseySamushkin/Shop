@@ -2,7 +2,7 @@ import { all, takeLatest, takeEvery } from 'redux-saga/effects';
 import types from "../types";
 import {getAllCategoriesSaga} from "./category";
 import {getProductsOfCategory, getOneProductSaga} from "./products";
-import {addInCartSaga, getCartSaga} from "./cart";
+import {addInCartSaga, getCartSaga, sendCartSaga} from "./cart";
 
 
 function* rootSaga() {
@@ -12,6 +12,7 @@ function* rootSaga() {
         takeLatest( types.GET_ITEM_ID, getOneProductSaga),
         takeLatest( types.GET_CART, getCartSaga),
         takeLatest( types.ADD_CART, addInCartSaga),
+        takeLatest( types.SEND_CART, sendCartSaga),
     ]);
 }
 
