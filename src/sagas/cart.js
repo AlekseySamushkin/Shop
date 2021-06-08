@@ -37,10 +37,9 @@ export function* getCartSaga(  ) {
 
 export function* addInCartSaga( action ) {
     try {
-        const { body } = action.$payload;
         const token = localStorage.getItem('token') || 'null';
         const json = yield API.rest.cart.add({
-            ...body,
+            ...action.$payload,
             token
         });
         storeTokens(json)
