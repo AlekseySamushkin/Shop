@@ -23,6 +23,7 @@ const Basket = ({ getCart, clearCart, basket}) => {
                     <BasketItem
                         key={el.id}
                         id={el.id}
+                        itemId={el.itemId}
                         name={el.name}
                         description={el.description}
                         img={el.image}

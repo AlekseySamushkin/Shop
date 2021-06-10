@@ -63,8 +63,8 @@ export function* sendCartSaga( action ) {
 
 export function* removeInCartSaga( action ) {
     try {
-        yield API.rest.cart.remove(action.$payload.id);
-        yield put( deleteCart(action.$payload.id));
+        yield API.rest.cart.remove(action.$payload);
+        yield put( deleteCart(action.$payload));
     } catch (err) {
         console.log(err);
     }

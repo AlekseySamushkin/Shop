@@ -1,13 +1,15 @@
 import React from "react";
-import './index.scss';
+import {connect} from "react-redux";
 import {history} from "../../store";
 import routes from "../../routes";
+import {removeCart} from "../../actions/cart";
+import './index.scss';
 
 
-const BasketItem = ({ id, name, img, description}) => {
+const BasketItem = ({ id, name, img, description, itemId, removeCart}) => {
 
     const onDelete = () => {
-        console.log('delete',id)
+        removeCart(itemId)
     };
 
     return (
@@ -24,4 +26,12 @@ const BasketItem = ({ id, name, img, description}) => {
     )
 }
 
-export default BasketItem;
+export const mapStateToProps = () => {
+    return {};
+};
+
+const ConnectedComponent = connect(mapStateToProps, {
+    removeCart
+})(BasketItem);
+
+export default ConnectedComponent;
