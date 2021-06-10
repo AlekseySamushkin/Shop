@@ -225,7 +225,7 @@ const connect = (props) => {
     const cart = (url) => ({
         get: (query) => get({ url, query, path: 1 }),
         add: (body) => post({ url: `${url}/add`, body }),
-        send: (body) => post({ url: `${url}/send`, body }),
+        send: (body) => post({ url: "/Mail/sendMail", body }),
         remove: (id) => remove({ url, path: id }),
         update: (body) => put({ url, body }),
     })

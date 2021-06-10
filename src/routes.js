@@ -11,6 +11,7 @@ function request(url) {
 export const routes = {
     home: request('/'),
     phone: request('/phone'),
+    about: request('/about'),
     basket: request('/basket'),
 };
 

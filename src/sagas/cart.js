@@ -53,10 +53,7 @@ export function* addInCartSaga( action ) {
 export function* sendCartSaga( action ) {
     try {
         console.log('action.$payload',action.$payload)
-        const json = yield API.rest.cart.send({
-            ...action.$payload,
-            // token
-        });
+        yield API.rest.cart.send(action.$payload);
         yield put( clearCart());
     } catch (err) {
         console.log(err);

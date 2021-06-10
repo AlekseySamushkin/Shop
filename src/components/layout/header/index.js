@@ -12,7 +12,10 @@ const Header = () => {
         <header>
             <div className="header__content">
                 <Link to={routes.home()}>Phone Market</Link>
-                <button className="basket" onClick={() => history.push(routes.basket())}>Моя корзина</button>
+                <div className="header__content__rightContainer">
+                    <button className="basket" onClick={() => history.push(routes.about())}>О нас</button>
+                    <button className="basket" onClick={() => history.push(routes.basket())}>Моя корзина</button>
+                </div>
             </div>
         </header>
     )

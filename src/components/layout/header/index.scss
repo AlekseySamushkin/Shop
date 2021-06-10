@@ -20,6 +20,13 @@ header {
       text-align: left;
       width: 100%;
       margin: 0 27px;
+      &__rightContainer {
+        button {
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
       a {
         font-family: PFDinTextCompPro-Medium, serif;
         font-style: normal;
@@ -39,6 +46,21 @@ header {
         font-size: 16px;
         color: #000;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    .header {
+      &__content {
+        flex-direction: column;
+        &__rightContainer {
+          margin-bottom: 10px;
+          justify-content: space-between;
+          display: flex;
+        }
       }
     }
   }

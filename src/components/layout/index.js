@@ -8,6 +8,7 @@ import Header from "./header";
 const HomePage = lazy(() => import('../../pages/home'));
 const PhonePage = lazy(() => import('../../pages/phonePage'));
 const Basket = lazy(() => import('../../pages/basket'));
+const About = lazy(() => import('../../pages/about'));
 
 
 const Layout  = () => {
@@ -19,6 +20,7 @@ const Layout  = () => {
                     <Switch>
                         <Route exact path={routes.home()} component={HomePage}/>
                         <Route exact path={routes.basket()} component={Basket}/>
+                        <Route exact path={routes.about()} component={About}/>
                         <Route exact path={routes.phone(":id")} component={PhonePage}/>
                         <Route
                             path="*"

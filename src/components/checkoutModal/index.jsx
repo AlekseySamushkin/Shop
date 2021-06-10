@@ -26,7 +26,7 @@ const CheckoutModal = ({ onClose, sendCart, phoneList }) => {
             sendCart({
                 email,
                 name,
-                phoneList,
+                numbers: phoneList,
             })
             onClose();
         }
