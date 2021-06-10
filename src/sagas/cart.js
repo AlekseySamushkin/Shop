@@ -1,6 +1,6 @@
 import API from "../api";
 import { put, call } from "redux-saga/effects";
-import {addNewCart, clearCart, setCart} from "../actions/cart";
+import {addNewCart, clearCart, deleteCart, setCart} from "../actions/cart";
 import phone from "../assets/phone.png";
 
 // const json = [
@@ -61,13 +61,11 @@ export function* sendCartSaga( action ) {
 }
 
 
-// export function* removeInCartSaga( action ) {
-//     try {
-//         const token = localStorage.getItem('token') || 'null';
-//         const json = yield API.rest.cart.remove(action.$payload.id);
-//         storeTokens(json)
-//         yield put( addNewCart(json));
-//     } catch (err) {
-//         console.log(err);
-//     }
-// }
+export function* removeInCartSaga( action ) {
+    try {
+        yield API.rest.cart.remove(action.$payload.id);
+        yield put( deleteCart(action.$payload.id));
+    } catch (err) {
+        console.log(err);
+    }
+}

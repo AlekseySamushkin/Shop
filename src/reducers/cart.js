@@ -22,6 +22,12 @@ const reducer = ( state = initialState, action ) => {
                 ...state,
                 basket: null,
             };
+        case types.DELETE_CART:
+            const filteredList = state.basket.filter(el=> el.id !== action.$payload)
+            return {
+                ...state,
+                basket: filteredList.length === 0 ? null : filteredList,
+            };
         default:
             return state;
     }
